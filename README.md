@@ -1,153 +1,25 @@
+Projeto Integrador — Onde Vivemos
+
+Projeto desenvolvido para a atividade de Projeto Integrador.
+
+O site apresenta informações sobre o município de Toledo - PR e o bairro Jardim Pancera, onde moro.
+
+Conteúdo
+
+História e informações sobre Toledo;
+
+Dados do município;
+
+Informações sobre o Jardim Pancera;
+
+Relação entre o bairro e o município.
+
+
+Arquivos
+
+index.html — estrutura e conteúdo da página.
+
+integrador.css — estilos da página.
 
 
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto-queimadas</title>
-    <link rel="stylesheet" href="integrador.css">
-</head>
-
-<body>
-
-     <h1> página do projeto integrador</h1>
-
-
-    <header>
-        <h1>Onde Vivemos:</h1>
-    </header>
-
-    <main>
-
-        <h1>gabriel senger piana</h1>
-
-        <section id="municipio">
-            <h2>Município: Toledo - Paraná</h2>
-
-            <p>
-                Toledo é um município localizado na região Oeste do estado do Paraná.
-                O município é conhecido pelo desenvolvimento da agricultura, da
-                agroindústria, do comércio e dos serviços, tendo uma importante
-                participação na economia regional.
-            </p>
-
-            <p>
-                A história de Toledo começou a ganhar forma em 1946, quando chegaram
-                à região as primeiras famílias de colonizadores. A ocupação foi
-                impulsionada pela colonização organizada pela Industrial Madeireira
-                Colonizadora Rio Paraná S/A (Maripá). A região também possuía relação
-                histórica com os antigos caminhos utilizados para o transporte de
-                produtos, especialmente a erva-mate.
-            </p>
-
-            <p>
-                Toledo foi desmembrado de Foz do Iguaçu pela Lei Estadual nº 790,
-                de 14 de novembro de 1951. A instalação oficial do município ocorreu
-                em 14 de dezembro de 1952, data que passou a ser considerada o
-                aniversário de Toledo.
-            </p>
-
-            <h3>Toledo em números</h3>
-
-            <ul>
-                <li><strong>Estado:</strong> Paraná</li>
-                <li><strong>Código do município:</strong> 4127700</li>
-                <li><strong>População no Censo 2022:</strong> 150.470 habitantes</li>
-                <li><strong>População estimada para 2026:</strong> 162.658 habitantes</li>
-                <li><strong>Área territorial:</strong> 1.197,223 km²</li>
-                <li><strong>Gentílico:</strong> toledano</li>
-                <li><strong>Emancipação:</strong> 14 de dezembro de 1952</li>
-            </ul>
-
-            <p>
-                Atualmente, Toledo possui uma economia diversificada, com destaque
-                para as atividades agroindustriais, agropecuárias, industriais,
-                comerciais e de serviços. A produção rural e a agroindústria têm
-                papel importante na formação econômica do município.
-            </p>
-
-            <p>
-                Além da atividade econômica, o município possui espaços destinados
-                à educação, cultura, esporte, lazer e convivência da população.
-                Toledo também possui diversos distritos e uma área urbana formada
-                por diferentes bairros.
-            </p>
-        </section>
-
-        <!-- BAIRRO -->
-        <section id="bairro">
-            <h2>Bairro: Jardim Pancera</h2>
-
-            <p>
-                O Jardim Pancera é um bairro localizado na área urbana do município
-                de Toledo, no Paraná. O bairro faz parte da estrutura urbana da cidade
-                e está entre os bairros oficialmente relacionados na área urbana da
-                sede municipal.
-            </p>
-
-            <p>
-                O bairro possui características predominantemente residenciais e
-                está integrado à estrutura urbana de Toledo. Como parte da cidade,
-                seus moradores utilizam a rede de serviços, comércio, educação,
-                saúde, transporte e demais equipamentos disponíveis no município.
-            </p>
-
-            <p>
-                O Jardim Pancera também aparece em informações oficiais da Prefeitura
-                de Toledo relacionadas à organização dos serviços públicos. O
-                cronograma de coleta de resíduos sólidos, por exemplo, divide o bairro
-                em diferentes áreas para a realização do serviço.
-            </p>
-
-            <h3>O bairro e a cidade</h3>
-
-            <p>
-                Viver no Jardim Pancera significa fazer parte de uma comunidade que
-                está diretamente ligada ao desenvolvimento de Toledo. O bairro está
-                conectado às demais regiões da cidade por suas ruas e vias de acesso,
-                permitindo que os moradores tenham acesso às diferentes atividades
-                e serviços oferecidos pelo município.
-            </p>
-
-            <p>
-                A relação entre o bairro e o município mostra como cada comunidade
-                contribui para formar a identidade de uma cidade. Os moradores do
-                Jardim Pancera fazem parte da história e do cotidiano de Toledo,
-                participando da vida social, econômica e cultural do município.
-            </p>
-
-        </section>
-
-        <!-- CONCLUSÃO -->
-        <section id="conclusao">
-            <h2>Conclusão</h2>
-
-            <p>
-                Toledo é um município que apresenta uma história marcada pela
-                colonização, pelo crescimento urbano e pelo desenvolvimento das
-                atividades agropecuárias, industriais e de serviços. Dentro desse
-                município está o Jardim Pancera, um dos bairros que compõem a área
-                urbana da cidade.
-            </p>
-
-            <p>
-                Conhecer o lugar onde vivemos permite compreender melhor a história,
-                as características e a importância da comunidade da qual fazemos
-                parte. O município e seus bairros estão ligados pelo cotidiano de
-                seus moradores e pelo desenvolvimento conjunto da cidade.
-            </p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>
-            <strong>Fontes:</strong> Instituto Brasileiro de Geografia e Estatística
-            (IBGE) e Prefeitura Municipal de Toledo.
-        </p>
-    </footer>
-
-</body>
-</html>
