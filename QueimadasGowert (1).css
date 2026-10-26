@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(255, 68, 68);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.video {
+    margin: 1% 25%;
+    background-color: black;
+}
+
+.imagens-inicio {
+    margin: 1% 25%;
+    display: flex;
+    align-items: center;
+}
+
+.minhafoto {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.h1-titulo {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+    color: rgb(92, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 42px;
+}
+
+.h2-gowert {
+    text-align: center;
+    color: rgb(223, 12, 12);
+}
+
+.div-gowert {
+    background-color: rgb(0, 0, 0);
+    margin: 0% 20%;
+    padding: 3% 5%;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 6px;
+}
+
+.p-gowert-eu {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(244, 244, 248);
+}
+
+.p-textofml {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(245, 240, 240);
+}
+
+.p-trajetoria-gowert {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(247, 246, 245);
+}
+
+.div-maripa {
+    background-color: white;
+    margin: 5% 10%;
+    padding: 2% 5%;
+    border-radius: 16px;
+    border: solid black 3px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.p-maripa {
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.ul-maripa {
+    font-size: 20px;
+    text-align: justify;
+    color: #333333;
+}
+
+.h2-agro, .h2-festa, .h2-maripa {
+    text-align: center;
+    color: rgb(223, 12, 12);
+    margin-top: 40px;
+}
+
+/* Painel de Controles (Botões de Idioma e Tema) */
+.painel-controles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-controle {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-controle:hover {
+    background-color: #eee;
+}
+
+/* ===================================================
+   Ajustes Modo Noturno - Lucas Felipe Gowert Uhlmann
+   =================================================== */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f8;
+}
+
+body.dark-mode .div-maripa {
+    background-color: #2b2b2b;
+    border-color: #444444;
+}
+
+body.dark-mode .h1-titulo {
+    color: #4dd0e1;
+}
+
+body.dark-mode .h2-gowert, 
+body.dark-mode .h2-maripa, 
+body.dark-mode .h2-agro, 
+body.dark-mode .h2-festa {
+    color: #ff6b6b;
+}
+
+body.dark-mode .p-maripa, 
+body.dark-mode .ul-maripa {
+    color: #e0e0e0;
+}
+
+body.dark-mode .minhafoto {
+    border-color: #ffffff;
+}
+
+body.dark-mode .btn-controle {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
