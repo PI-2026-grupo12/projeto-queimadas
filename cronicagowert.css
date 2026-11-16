@@ -1,0 +1,24 @@
+.h1-cronica {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(4, 0, 134);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+}
+
+.main-cronica {
+    margin: 2% 20%;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.p-cronica {
+    font-size: 23px;
+   color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body {
+    background-color: aqua;
+}
