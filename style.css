@@ -1,0 +1,275 @@
+/* VARIÁVEIS DE CORES (MODO CLARO PADRÃO) */
+:root {
+    --bg-body: #f4f6f9;
+    --bg-card: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --accent-primary: #6b21a8;
+    --accent-secondary: #15803d;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* VARIÁVEIS DO MODO NOTURNO */
+body.dark-mode {
+    --bg-body: #111827;
+    --bg-card: #1f2937;
+    --text-primary: #f3f4f6;
+    --text-secondary: #d1d5db;
+    --accent-primary: #c084fc;
+    --accent-secondary: #4ade80;
+    --border-color: #374151;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* BARRA SUPERIOR COM OS BOTÕES */
+.top-bar {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.controls {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.btn-control {
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .btn-control {
+    color: #111827;
+}
+
+.btn-control:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* GALERIA DE FOTOS INICIAL (SUA FOTO + FOTO DA CIDADE) */
+.galeria-inicial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.foto-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.foto-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.foto-box span {
+    font-weight: 600;
+    color: var(--accent-primary);
+    font-size: 1rem;
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre-mim h2 {
+    font-size: 2rem;
+    color: var(--accent-primary);
+    margin-bottom: 5px;
+}
+
+.sobre-mim h3 {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--accent-primary);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow);
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--text-secondary);
+}
+
+/* DIVISÓRIA */
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--border-color);
+    margin: 40px 0;
+}
+
+/* SEÇÃO CIDADE DE MARIPÁ */
+.div-maripa {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.h2-gowert {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.h2-maripa {
+    font-size: 2.2rem;
+    color: var(--accent-primary);
+    margin-bottom: 15px;
+}
+
+.h2-agro, .h2-festa {
+    font-size: 1.4rem;
+    color: var(--accent-secondary);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.p-maripa {
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.ul-maripa {
+    margin: 15px 0 15px 25px;
+    color: var(--text-secondary);
+}
+
+.ul-maripa li {
+    margin-bottom: 8px;
+}
+
+/* SEÇÃO DO VÍDEO */
+.video {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.titulo-video {
+    color: var(--accent-primary);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.video video {
+    width: 100%;
+    max-width: 720px;
+    max-height: 480px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+/* LINK DA MATÉRIA */
+.link-noticia {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--accent-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.link-noticia:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+    .controls {
+        justify-content: center;
+    }
+
+    .galeria-inicial {
+        grid-template-columns: 1fr; /* Empilha as duas fotos no celular */
+    }
+
+    .foto-box img {
+        height: 240px;
+    }
+
+    .h2-maripa {
+        font-size: 1.8rem;
+    }
+
+    .card, .div-maripa {
+        padding: 18px;
+    }
+}

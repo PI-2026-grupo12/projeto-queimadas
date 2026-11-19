@@ -1,33 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-    <link rel="stylesheet" href="menu.css">
+    <title>Sobre Mim & Maripá - Pedro Miguel Geraldi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>trabalho projeto integrador</h1>
-        <h2>menu</h2>
 
+<body>
+
+    <!-- BARRA DE CONTROLES (TEMA E IDIOMA) -->
+    <header class="top-bar">
+        <div class="controls">
+            <button id="btn-tema" class="btn-control">🌙 Modo Noturno</button>
+            <button id="btn-idioma" class="btn-control">🇺🇸 English</button>
+        </div>
     </header>
 
-    <a href="index.html">Gabriel Senger Piana</a>
+    <main class="container">
 
-    <a href="index.html">Lucas Felipe</a>
+        <!-- NOVO: FOTOS DE APRESENTAÇÃO NO COMEÇO DO SITE -->
+        <section class="galeria-inicial">
+            <div class="foto-box">
+                <img src="pedro.png" alt="Foto de Pedro Miguel Geraldi">
+                <span data-pt="Pedro Miguel Geraldi" data-en="Pedro Miguel Geraldi">Pedro Miguel Geraldi</span>
+            </div>
+            <div class="foto-box">
+                <img src="maripa.jpg" alt="Foto da cidade de Maripá">
+                <span data-pt="Maripá - Paraná" data-en="Maripá - Paraná">Maripá - Paraná</span>
+            </div>
+        </section>
 
-    <a href="index.html">Pedro Geraldi</a>
+        <!-- SEÇÃO: SOBRE MIM -->
+        <section class="sobre-mim">
 
+            <h2 data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+            <h3>Pedro Miguel Geraldi</h3>
 
+            <div class="card">
+                <h4 data-pt="Nascimento" data-en="Birth">Nascimento</h4>
+                <p data-pt="Meu nascimento foi um momento muito importante para minha família, marcado por alegria, emoção e muitas expectativas para o início de uma nova etapa. Desde então, venho construindo minha própria história por meio das experiências que vivi."
+                   data-en="My birth was a very important moment for my family, marked by joy, emotion, and high expectations for the beginning of a new chapter. Since then, I have been building my own story through the experiences I have lived.">
+                    Meu nascimento foi um momento muito importante para minha
+                    família, marcado por alegria, emoção e muitas expectativas
+                    para o início de uma nova etapa. Desde então, venho construindo
+                    minha própria história por meio das experiências que vivi.
+                </p>
+            </div>
 
+            <div class="card">
+                <h4 data-pt="Trajeto Escolar" data-en="School Journey">Trajeto Escolar</h4>
+                <p data-pt="Minha trajetória escolar é formada por diferentes momentos de aprendizado e descobertas. Ao longo dos anos, conheci novas matérias, fiz amizades incríveis e desenvolvi conhecimentos que contribuem para minha formação e para o meu futuro."
+                   data-en="My school journey is made up of different moments of learning and discovery. Over the years, I have learned new subjects, made amazing friends, and developed knowledge that contributes to my education and my future.">
+                    Minha trajetória escolar é formada por diferentes momentos
+                    de aprendizado e descobertas. Ao longo dos anos, conheci
+                    novas matérias, fiz amizades incríveis e desenvolvi conhecimentos
+                    que contribuem para minha formação e para o meu futuro.
+                </p>
+            </div>
 
+            <div class="card">
+                <h4 data-pt="Contexto Histórico" data-en="Historical Context">Contexto Histórico</h4>
+                <p data-pt="Minha história acontece em uma época marcada pelo avanço da tecnologia e pelas mudanças na forma de estudar, trabalhar e se comunicar. A internet e as novas tecnologias fazem parte do cotidiano e também estão presentes na educação."
+                   data-en="My story takes place in an era marked by technological advancement and changes in the way we study, work, and communicate. The internet and new technologies are part of daily life and are also present in education.">
+                    Minha história acontece em uma época marcada pelo avanço
+                    da tecnologia e pelas mudanças na forma de estudar, trabalhar
+                    e se comunicar. A internet e as novas tecnologias fazem parte
+                    do cotidiano e também estão presentes na educação.
+                </p>
+            </div>
 
+            <div class="card">
+                <h4 data-pt="Vivência Atual" data-en="Current Experience">Vivência Atual</h4>
+                <p data-pt="Atualmente, continuo minha jornada de estudos e aprendizado. Todos os dias tenho novas oportunidades para aprender, enfrentar desafios e desenvolver minhas habilidades. Essas experiências ajudam na minha preparação para o futuro."
+                   data-en="Currently, I continue my journey of study and learning. Every day I have new opportunities to learn, face challenges, and develop my skills. These experiences help prepare me for the future.">
+                    Atualmente, continuo minha jornada de estudos e aprendizado.
+                    Todos os dias tenho novas oportunidades para aprender,
+                    enfrentar desafios e desenvolver minhas habilidades. Essas
+                    experiências ajudam na minha preparação para o futuro.
+                </p>
+            </div>
 
+            <div class="card">
+                <h4 data-pt="Planos Para o Futuro" data-en="Plans for the Future">Planos Para o Futuro</h4>
+                <p data-pt="No futuro eu quero ter realizações de sonhos, ter uma vida boa, um bom emprego, quero formar uma família e também ser uma boa pessoa, alegre e livre."
+                   data-en="In the future, I want to achieve my dreams, have a good life, a good job, start a family, and also be a good, joyful, and free person.">
+                    No futuro eu quero ter realizações de sonhos, ter uma vida boa,
+                    um bom emprego, quero formar uma família e também ser uma boa
+                    pessoa, alegre e livre.
+                </p>
+            </div>
 
+        </section>
 
+        <hr>
 
+        <!-- SEÇÃO: SOBRE A CIDADE (MARIPÁ) -->
+        <section class="cidade-maripa">
 
+            <div class="div-maripa">
+                <h2 class="h2-gowert" data-pt="Pedro e Lucas: A cidade onde moramos" data-en="Pedro & Lucas: The city where we live">Pedro e Lucas: A cidade onde moramos</h2>
+                <h2 class="h2-maripa">Maripá</h2>
+                <p class="p-maripa"
+                   data-pt="Maripá é um município brasileiro no estado do Paraná, localizado na região oeste, a cerca de 600 km de Curitiba. Conhecida como a 'Cidade das Orquídeas' e capital estadual do Arrancadão de Tratores, a cidade tem pouco mais de 6.800 habitantes e destaca-se pela forte produção agropecuária e piscicultura."
+                   data-en="Maripá is a Brazilian municipality in the state of Paraná, located in the western region, about 600 km from Curitiba. Known as the 'City of Orchids' and state capital of Tractor Drag Racing, the city has just over 6,800 inhabitants and stands out for its strong agricultural production and fish farming.">
+                    Maripá é um município brasileiro no estado do Paraná, localizado na região oeste, a cerca de 600 km de Curitiba. Conhecida como a "Cidade das Orquídeas" e capital estadual do Arrancadão de Tratores, a cidade tem pouco mais de 6.800 habitantes e destaca-se pela forte produção agropecuária e piscicultura.
+                </p>
+                <ul class="ul-maripa">
+                    <li data-pt="<b>Cidade das Orquídeas:</b> Milhares de orquídeas são cultivadas e enfeitam as árvores das ruas e praças centrais."
+                        data-en="<b>City of Orchids:</b> Thousands of orchids are cultivated and decorate the trees on the streets and central squares.">
+                        <b>Cidade das Orquídeas:</b> Milhares de orquídeas são cultivadas e enfeitam as árvores das ruas e praças centrais.
+                    </li>
+                    <li data-pt="<b>Arrancadão de Tratores:</b> Tradicional evento anual da cidade que atrai visitantes de toda a região."
+                        data-en="<b>Tractor Drag Racing:</b> A traditional annual city event that attracts visitors from all over the region.">
+                        <b>Arrancadão de Tratores:</b> Tradicional evento anual da cidade que atrai visitantes de toda a região.
+                    </li>
+                    <li data-pt="<b>Piscicultura:</b> O município é uma das principais referências e potências na produção de peixes no estado."
+                        data-en="<b>Fish Farming:</b> The municipality is one of the main references and powerhouses in fish production in the state.">
+                        <b>Piscicultura:</b> O município é uma das principais referências e potências na produção de peixes no estado.
+                    </li>
+                </ul>
+
+                <h2 class="h2-agro" data-pt="Agropecuária" data-en="Agriculture & Livestock">Agropecuária</h2>
+                <p class="p-maripa" data-pt="A cidade se destaca na produção de peixes, soja e milho." data-en="The city stands out in the production of fish, soybeans, and corn.">
+                    A cidade se destaca na produção de peixes, soja e milho.
+                </p>
+
+                <h2 class="h2-festa" data-pt="Festa das Orquídeas" data-en="Orchid Festival">Festa das Orquídeas</h2>
+                <p class="p-maripa"
+                   data-pt="É a maior festa do município, ocorre 1x ao ano e dura 4 dias, tendo exposições de orquídeas, comidas a base de peixe (principalmente tilápia), stands, brinquedos no parque de diversões e apresentações/shows."
+                   data-en="It is the largest festival in the municipality, taking place once a year for 4 days, featuring orchid exhibitions, fish-based dishes (mainly tilapia), booths, amusement park rides, and live shows.">
+                    É a maior festa do município, ocorre 1x ao ano e dura 4 dias, tendo exposições de orquídeas, comidas a base de peixe (principalmente tilápia), stands, brinquedos no parque de diversões e apresentações/shows.
+                </p>
+            </div>
+
+            <!-- SEU VÍDEO FALANDO SOBRE A CIDADE -->
+            <section class="video">
+                <h3 class="titulo-video" data-pt="Falando sobre Maripá" data-en="Talking about Maripá">Falando sobre Maripá</h3>
+                <video controls poster="img/maripa.jpg">
+                    <source src="meu-video.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos.
+                </video>
+            </section>
+
+            <div class="div-maripa">
+                <h2 class="h2-agro" data-pt="Bairro-Centro" data-en="Downtown Neighborhood">Bairro-Centro</h2>
+                <p class="p-maripa"
+                   data-pt="O Centro de Maripá é o coração da cidade, aquele lugar onde tudo acontece e onde a história parece estar viva nas ruas. Lá no começo do século XX, tudo começou em volta da velha estação de trem, criada no dia 10 de outubro de 1972, que foi o motivo do bairro crescer e se tornar tão importante.<br><br>As ruas do Centro têm um jeitinho especial, com prédios antigos que contam um pouco da vida dos moradores de antigamente, misturados com construções mais modernas que mostram como a cidade foi mudando. No meio do bairro, tem a Praça Central, com aquele coreto charmoso e árvores grandes, que já viram muita coisa acontecer. A praça é onde as pessoas gostam de se encontrar, conversar e curtir eventos, principalmente nos finais de semana, quando tem a feira.<br><br>O Centro também é onde estão a Biblioteca Municipal, o Teatro das Artes e o Museu Histórico. Ultimamente, o bairro está passando por mudanças legais, tentando ficar mais sustentável e acolhedor para todo mundo, e isso tem trazido melhorias no jeito de viver ali.<br><br>Se você vier a Maripá, não pode deixar de dar uma volta pelo Centro."
+                   data-en="Downtown Maripá is the heart of the city, the place where everything happens and where history feels alive in the streets. Back in the early 20th century, everything started around the old train station, established on October 10, 1972, which was the reason the neighborhood grew and became so important.<br><br>The downtown streets have a special charm, with old buildings that tell a bit about the lives of past residents, mixed with more modern constructions that show how the city has evolved. In the middle of the neighborhood is the Central Square, with its charming bandstand and large trees that have witnessed so much. The square is where people like to meet, chat, and enjoy events, especially on weekends during the local market.<br><br>Downtown is also home to the Municipal Library, the Arts Theater, and the Historical Museum. Lately, the neighborhood has been undergoing great changes, becoming more sustainable and welcoming for everyone, which has improved the quality of life there.<br><br>If you ever visit Maripá, you must take a walk through Downtown.">
+                    O Centro de Maripá é o coração da cidade, aquele lugar onde tudo acontece e onde a história parece estar viva nas ruas. Lá no começo do século XX, tudo começou em volta da velha estação de trem, criada no dia 10 de outubro de 1972, que foi o motivo do bairro crescer e se tornar tão importante.<br><br>
+                    As ruas do Centro têm um jeitinho especial, com prédios antigos que contam um pouco da vida dos moradores de antigamente, misturados com construções mais modernas que mostram como a cidade foi mudando. No meio do bairro, tem a Praça Central, com aquele coreto charmoso e árvores grandes, que já viram muita coisa acontecer. A praça é onde as pessoas gostam de se encontrar, conversar e curtir eventos, principalmente nos finais de semana, quando tem a feira.<br><br>
+                    O Centro também é onde estão a Biblioteca Municipal, o Teatro das Artes e o Museu Histórico. Ultimamente, o bairro está passando por mudanças legais, tentando ficar mais sustentável e acolhedor para todo mundo, e isso tem trazido melhorias no jeito de viver ali.<br><br>
+                    Se você vier a Maripá, não pode deixar de dar uma volta pelo Centro.
+                </p>
+            </div>
+
+            <div class="div-maripa">
+                <h2 class="h2-agro" data-pt="Desenvolvimento e ações do município em relação ao <i>Meio Ambiente</i>" data-en="Municipal development and actions regarding the <i>Environment</i>">Desenvolvimento e ações do município em relação ao <i>Meio Ambiente</i></h2>
+                <p class="p-maripa"
+                   data-pt="<b>O município de Maripá (PR) realiza ações de meio ambiente voltadas à sustentabilidade, preservação de recursos hídricos e educação ecológica. Como por exemplo:</b>"
+                   data-en="<b>The municipality of Maripá (PR) carries out environmental actions focused on sustainability, water resource preservation, and ecological education. For example:</b>">
+                    <b>O município de Maripá (PR) realiza ações de meio ambiente voltadas à sustentabilidade, preservação de recursos hídricos e educação ecológica. Como por exemplo:</b>
+                </p>
+                <p class="p-maripa"
+                   data-pt="<b>Proteção e Recuperação de Nascentes:</b> O programa foca na recuperação de nascentes na propriedade rural do maripaense. A medida protege o fluxo de água essencial para a piscicultura local."
+                   data-en="<b>Spring Protection and Recovery:</b> The program focuses on recovering natural springs on rural properties in Maripá. This measure protects the water flow essential for local fish farming.">
+                    <b>Proteção e Recuperação de Nascentes:</b> O programa foca na recuperação de nascentes na propriedade rural do maripaense. A medida protege o fluxo de água essencial para a piscicultura local.
+                </p>
+                <p class="p-maripa"
+                   data-pt="<b>Parcerias Estratégicas:</b> A Secretaria de Agricultura e Meio Ambiente atua junto a gestores ambientais da Itaipu Binacional em projetos de saneamento, manejo de resíduos e conservação."
+                   data-en="<b>Strategic Partnerships:</b> The Department of Agriculture and Environment works alongside environmental managers from Itaipu Binacional on sanitation, waste management, and conservation projects.">
+                    <b>Parcerias Estratégicas:</b> A Secretaria de Agricultura e Meio Ambiente atua junto a gestores ambientais da Itaipu Binacional em projetos de saneamento, manejo de resíduos e conservação.
+                </p>
+                <p class="p-maripa"
+                   data-pt="<b>Educação Ambiental e Plantio:</b> A prefeitura promove plantio de árvores e de orquídeas — ligando a identidade de Maripá como a 'Cidade das Orquídeas' — além da soltura de alevinos e atividades pedagógicas com alunos da rede municipal."
+                   data-en="<b>Environmental Education and Planting:</b> The city hall promotes tree and orchid planting — linking Maripá's identity as the 'City of Orchids' — in addition to releasing fingerlings into rivers and educational activities with municipal school students.">
+                    <b>Educação Ambiental e Plantio:</b> A prefeitura promove plantio de árvores e de orquídeas — ligando a identidade de Maripá como a "Cidade das Orquídeas" — além da soltura de alevinos e atividades pedagógicas com alunos da rede municipal.
+                </p>
+                <p class="p-maripa"
+                   data-pt="<b>Coleta Seletiva:</b> O município conta com coleta de lixo seletiva tanto na área urbana quanto na rural."
+                   data-en="<b>Selective Waste Collection:</b> The municipality provides selective garbage collection in both urban and rural areas.">
+                    <b>Coleta Seletiva:</b> O município conta com coleta de lixo seletiva tanto na área urbana quanto na rural.
+                </p>
+                <p class="p-maripa"
+                   data-pt="<b>Planejamento de Saneamento:</b> Maripá possui Plano Municipal de Saneamento Básico estruturado para orientar o crescimento sustentável da infraestrutura urbana e rural."
+                   data-en="<b>Sanitation Planning:</b> Maripá has a structured Municipal Basic Sanitation Plan to guide the sustainable growth of urban and rural infrastructure.">
+                    <b>Planejamento de Saneamento:</b> Maripá possui Plano Municipal de Saneamento Básico estruturado para orientar o crescimento sustentável da infraestrutura urbana e rural.
+                </p>
+                <a href="https://www.jornaldooeste.com.br/dia-do-meio-ambiente-e-marcado-por-acoes-de-preservacao-em-maripa/" class="link-noticia" target="_blank"
+                   data-pt="Matéria a respeito das ações de Maripá no meio ambiente"
+                   data-en="Article about Maripá's environmental actions">
+                    Matéria a respeito das ações de Maripá no meio ambiente
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p data-pt="Desenvolvido por Pedro Miguel Geraldi & Lucas • Maripá - PR"
+           data-en="Developed by Pedro Miguel Geraldi & Lucas • Maripá - PR">
+            Desenvolvido por Pedro Miguel Geraldi & Lucas • Maripá - PR
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
