@@ -1,3 +1,8 @@
+//esse é o js sobre o pedro
+
+
+
+
 const btnTema = document.getElementById('btn-tema');
 const btnIdioma = document.getElementById('btn-idioma');
 
