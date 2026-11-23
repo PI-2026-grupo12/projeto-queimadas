@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -87,6 +87,24 @@
             opacity: 0.85;
         }
 
+        .botao-idioma {
+            position: fixed;
+            top: 15px;
+            right: 160px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            background: #24436b;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .botao-idioma:hover {
+            opacity: 0.85;
+        }
+
         body.modo-noturno {
             background: #121212;
             color: #ffffff;
@@ -135,6 +153,10 @@
             .links a {
                 max-width: 100%;
             }
+
+            .botao-idioma {
+                right: 145px;
+            }
         }
     </style>
 </head>
@@ -146,10 +168,15 @@
         🌙 Modo noturno
     </button>
 
+    <button class="botao-idioma" id="botaoIdioma"
+            onclick="alternarIdioma()">
+        🇺🇸 English
+    </button>
+
     <nav class="menu">
-        <h1>Menu</h1>
-        <h2>Projeto Integrador</h2>
-        <h3>Sobre nós</h3>
+        <h1 id="titulo">Menu</h1>
+        <h2 id="projeto">Projeto Integrador</h2>
+        <h3 id="sobre">Sobre nós</h3>
 
         <div class="links">
             <a href="gabb.html">Gabriel Senger Piana</a>
@@ -159,6 +186,8 @@
     </nav>
 
     <script>
+        let idiomaIngles = false;
+
         function alternarTema() {
             const corpo = document.body;
             const botao = document.getElementById("botaoTema");
@@ -166,14 +195,38 @@
             corpo.classList.toggle("modo-noturno");
 
             if (corpo.classList.contains("modo-noturno")) {
-                botao.innerHTML = "☀️ Modo claro";
+                botao.innerHTML = idiomaIngles ? "☀️ Light mode" : "☀️ Modo claro";
                 botao.setAttribute("aria-pressed", "true");
             } else {
-                botao.innerHTML = "🌙 Modo noturno";
+                botao.innerHTML = idiomaIngles ? "🌙 Dark mode" : "🌙 Modo noturno";
                 botao.setAttribute("aria-pressed", "false");
             }
+        }
+
+        function alternarIdioma() {
+            idiomaIngles = !idiomaIngles;
+
+            document.documentElement.lang = idiomaIngles ? "en" : "pt-BR";
+
+            document.getElementById("titulo").textContent =
+                "Menu";
+
+            document.getElementById("projeto").textContent =
+                idiomaIngles ? "Integration Project" : "Projeto Integrador";
+
+            document.getElementById("sobre").textContent =
+                idiomaIngles ? "About us" : "Sobre nós";
+
+            document.getElementById("botaoIdioma").textContent =
+                idiomaIngles ? "🇧🇷 Português" : "🇺🇸 English";
+
+            document.getElementById("botaoTema").textContent =
+                document.body.classList.contains("modo-noturno")
+                ? (idiomaIngles ? "☀️ Light mode" : "☀️ Modo claro")
+                : (idiomaIngles ? "🌙 Dark mode" : "🌙 Modo noturno");
         }
     </script>
 
 </body>
 </html>
+```
