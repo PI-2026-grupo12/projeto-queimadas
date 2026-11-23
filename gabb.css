@@ -1,5 +1,4 @@
 
-/* CONFIGURAÇÕES GERAIS */
 
 * {
     margin: 0;
@@ -16,7 +15,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* BOTÃO DE MODO ESCURO */
+
 
 #modo-escuro {
     display: none;
@@ -41,7 +40,7 @@ body {
     transform: scale(1.04);
 }
 
-/* CABEÇALHO */
+
 
 header {
     background: linear-gradient(135deg, #234b34, #4b8056);
@@ -77,8 +76,6 @@ header {
     text-align: center;
 }
 
-/* MENU DE NAVEGAÇÃO */
-
 nav {
     background-color: #ffffff;
     display: flex;
@@ -102,7 +99,6 @@ nav a:hover {
     color: #72a47c;
 }
 
-/* CONTEÚDO PRINCIPAL */
 
 main {
     max-width: 1050px;
@@ -110,7 +106,6 @@ main {
     padding: 0 25px;
 }
 
-/* CARTÕES */
 
 .card {
     background-color: white;
@@ -127,7 +122,6 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
 }
 
-/* TÍTULOS */
 
 h2 {
     color: #315c3c;
@@ -143,14 +137,12 @@ h3 {
     margin-bottom: 15px;
 }
 
-/* PARÁGRAFOS */
 
 p {
     margin-bottom: 17px;
     text-align: justify;
 }
 
-/* INFORMAÇÕES */
 
 .informacoes {
     background-color: #edf4ed;
@@ -172,7 +164,6 @@ p {
     color: #315c3c;
 }
 
-/* RODAPÉ */
 
 footer {
     background-color: #234b34;
@@ -196,8 +187,6 @@ footer strong {
     color: #c6d9c9;
     margin-top: 15px;
 }
-
-/* MODO ESCURO */
 
 body:has(#modo-escuro:checked) {
     background-color: #121a15;
@@ -258,7 +247,6 @@ body:has(#modo-escuro:checked) .botao-tema:hover {
     background-color: #c6d8c9;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 600px) {
 
