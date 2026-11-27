@@ -284,3 +284,54 @@ body:has(#modo-escuro:checked) .botao-tema:hover {
         margin-right: 15px;
     }
 }
+
+.controles-topo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 6% 10px;
+}
+
+.controles-topo .botao-tema {
+    margin: 0;
+}
+
+.botao-idioma {
+    padding: 9px 18px;
+    background-color: #263f30;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-idioma:hover {
+    background-color: #42684d;
+    transform: scale(1.04);
+}
+
+body:has(#modo-escuro:checked) .botao-idioma {
+    background-color: #e4e9e4;
+    color: #1b2b20;
+}
+
+body:has(#modo-escuro:checked) .botao-idioma:hover {
+    background-color: #c6d8c9;
+}
+
+@media (max-width: 600px) {
+    .controles-topo {
+        margin: 15px;
+        gap: 8px;
+    }
+
+    .botao-idioma {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+}
+
