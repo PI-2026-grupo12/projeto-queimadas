@@ -11,39 +11,70 @@
 
 <body>
 
+    <!-- CONTROLES -->
     <input type="checkbox" id="modo-escuro">
 
-    <label for="modo-escuro" class="botao-tema">
-        🌙 Modo Escuro
-    </label>
+    <div class="controles-topo">
 
+        <label for="modo-escuro" class="botao-tema" id="texto-tema">
+            🌙 Modo Escuro
+        </label>
+
+        <button id="botao-idioma" class="botao-idioma">
+            🇺🇸 English
+        </button>
+
+    </div>
+
+
+    <!-- CABEÇALHO -->
     <header>
         <div class="cabecalho-conteudo">
-            <h1>Onde Vivemos</h1>
-            <p class="subtitulo">Conhecendo nossa cidade e comunidade</p>
-            <p class="aluno">Projeto Integrador | Gabriel Senger Piana</p>
+
+            <h1 id="titulo">Onde Vivemos</h1>
+
+            <p class="subtitulo" id="subtitulo">
+                Conhecendo nossa cidade e comunidade
+            </p>
+
+            <p class="aluno" id="aluno">
+                Projeto Integrador | Gabriel Senger Piana
+            </p>
+
         </div>
     </header>
 
+
+    <!-- MENU -->
     <nav>
-        <a href="#municipio">Município</a>
-        <a href="#bairro">Bairro</a>
-        <a href="#conclusao">Conclusão</a>
+
+        <a href="#municipio" id="nav-municipio">Município</a>
+
+        <a href="#bairro" id="nav-bairro">Bairro</a>
+
+        <a href="#conclusao" id="nav-conclusao">Conclusão</a>
+
     </nav>
 
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
+        <!-- MUNICÍPIO -->
         <section id="municipio" class="card">
-            <h2>Município: Toledo - Paraná</h2>
 
-            <p>
+            <h2 id="titulo-municipio">
+                Município: Toledo - Paraná
+            </h2>
+
+            <p id="municipio1">
                 Toledo é um município localizado na região Oeste do estado do Paraná.
                 O município é conhecido pelo desenvolvimento da agricultura, da
                 agroindústria, do comércio e dos serviços, tendo uma importante
                 participação na economia regional.
             </p>
 
-            <p>
+            <p id="municipio2">
                 A história de Toledo começou a ganhar forma em 1946, quando chegaram
                 à região as primeiras famílias de colonizadores. A ocupação foi
                 impulsionada pela colonização organizada pela Industrial Madeireira
@@ -52,70 +83,111 @@
                 produtos, especialmente a erva-mate.
             </p>
 
-            <p>
+            <p id="municipio3">
                 Toledo foi desmembrado de Foz do Iguaçu pela Lei Estadual nº 790,
                 de 14 de novembro de 1951. A instalação oficial do município ocorreu
                 em 14 de dezembro de 1952, data que passou a ser considerada o
                 aniversário de Toledo.
             </p>
 
+
             <div class="informacoes">
-                <h3>Toledo em números</h3>
+
+                <h3 id="titulo-numeros">Toledo em números</h3>
 
                 <ul>
-                    <li><strong>Estado:</strong> Paraná</li>
-                    <li><strong>Código do município:</strong> 4127700</li>
-                    <li><strong>População no Censo 2022:</strong> 150.470 habitantes</li>
-                    <li><strong>População estimada para 2026:</strong> 162.658 habitantes</li>
-                    <li><strong>Área territorial:</strong> 1.197,223 km²</li>
-                    <li><strong>Gentílico:</strong> toledano</li>
-                    <li><strong>Emancipação:</strong> 14 de dezembro de 1952</li>
+
+                    <li>
+                        <strong id="rotulo-estado">Estado:</strong>
+                        <span id="valor-estado">Paraná</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-codigo">Código do município:</strong>
+                        <span id="valor-codigo">4127700</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-populacao">População no Censo 2022:</strong>
+                        <span id="valor-populacao">150.470 habitantes</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-estimativa">População estimada para 2026:</strong>
+                        <span id="valor-estimativa">162.658 habitantes</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-area">Área territorial:</strong>
+                        <span id="valor-area">1.197,223 km²</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-gentilico">Gentílico:</strong>
+                        <span id="valor-gentilico">toledano</span>
+                    </li>
+
+                    <li>
+                        <strong id="rotulo-emancipacao">Emancipação:</strong>
+                        <span id="valor-emancipacao">14 de dezembro de 1952</span>
+                    </li>
+
                 </ul>
+
             </div>
 
-            <p>
+
+            <p id="municipio4">
                 Atualmente, Toledo possui uma economia diversificada, com destaque
                 para as atividades agroindustriais, agropecuárias, industriais,
                 comerciais e de serviços. A produção rural e a agroindústria têm
                 papel importante na formação econômica do município.
             </p>
 
-            <p>
+            <p id="municipio5">
                 Além da atividade econômica, o município possui espaços destinados
                 à educação, cultura, esporte, lazer e convivência da população.
                 Toledo também possui diversos distritos e uma área urbana formada
                 por diferentes bairros.
             </p>
+
         </section>
 
-        <section id="bairro" class="card">
-            <h2>Bairro: Jardim Pancera</h2>
 
-            <p>
+        <!-- BAIRRO -->
+        <section id="bairro" class="card">
+
+            <h2 id="titulo-bairro">
+                Bairro: Jardim Pancera
+            </h2>
+
+            <p id="bairro1">
                 O Jardim Pancera é um bairro localizado na área urbana do município
                 de Toledo, no Paraná. O bairro faz parte da estrutura urbana da cidade
                 e está entre os bairros oficialmente relacionados na área urbana da
                 sede municipal.
             </p>
 
-            <p>
+            <p id="bairro2">
                 O bairro possui características predominantemente residenciais e
                 está integrado à estrutura urbana de Toledo. Como parte da cidade,
                 seus moradores utilizam a rede de serviços, comércio, educação,
                 saúde, transporte e demais equipamentos disponíveis no município.
             </p>
 
-            <p>
+            <p id="bairro3">
                 O Jardim Pancera também aparece em informações oficiais da Prefeitura
                 de Toledo relacionadas à organização dos serviços públicos. O
                 cronograma de coleta de resíduos sólidos, por exemplo, divide o bairro
                 em diferentes áreas para a realização do serviço.
             </p>
 
-            <div class="informacoes">
-                <h3>O bairro e a cidade</h3>
 
-                <p>
+            <div class="informacoes">
+
+                <h3 id="titulo-relacao">O bairro e a cidade</h3>
+
+                <p id="bairro4">
                     Viver no Jardim Pancera significa fazer parte de uma comunidade que
                     está diretamente ligada ao desenvolvimento de Toledo. O bairro está
                     conectado às demais regiões da cidade por suas ruas e vias de acesso,
@@ -123,19 +195,24 @@
                     e serviços oferecidos pelo município.
                 </p>
 
-                <p>
+                <p id="bairro5">
                     A relação entre o bairro e o município mostra como cada comunidade
                     contribui para formar a identidade de uma cidade. Os moradores do
                     Jardim Pancera fazem parte da história e do cotidiano de Toledo,
                     participando da vida social, econômica e cultural do município.
                 </p>
+
             </div>
+
         </section>
 
-        <section id="conclusao" class="card">
-            <h2>Conclusão</h2>
 
-            <p>
+        <!-- CONCLUSÃO -->
+        <section id="conclusao" class="card">
+
+            <h2 id="titulo-conclusao">Conclusão</h2>
+
+            <p id="conclusao1">
                 Toledo é um município que apresenta uma história marcada pela
                 colonização, pelo crescimento urbano e pelo desenvolvimento das
                 atividades agropecuárias, industriais e de serviços. Dentro desse
@@ -143,188 +220,254 @@
                 urbana da cidade.
             </p>
 
-            <p>
+            <p id="conclusao2">
                 Conhecer o lugar onde vivemos permite compreender melhor a história,
                 as características e a importância da comunidade da qual fazemos
                 parte. O município e seus bairros estão ligados pelo cotidiano de
                 seus moradores e pelo desenvolvimento conjunto da cidade.
             </p>
+
         </section>
 
     </main>
 
+
+    <!-- RODAPÉ -->
     <footer>
+
         <p>
-            <strong>Fontes:</strong> Instituto Brasileiro de Geografia e Estatística
-            (IBGE) e Prefeitura Municipal de Toledo.
+            <strong id="fontes">Fontes:</strong>
+            <span id="texto-fontes">
+                Instituto Brasileiro de Geografia e Estatística
+                (IBGE) e Prefeitura Municipal de Toledo.
+            </span>
         </p>
-        <p class="rodape-final">Projeto Integrador - Onde Vivemos</p>
+
+        <p class="rodape-final" id="rodape-final">
+            Projeto Integrador - Onde Vivemos
+        </p>
+
     </footer>
 
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!-- JAVASCRIPT -->
+    <script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onde Vivemos | Toledo - PR</title>
-    <link rel="stylesheet" href="teste.css">
-</head>
+        const botaoIdioma = document.getElementById("botao-idioma");
 
-<body>
+        const idiomaPortugues = {
 
-    <input type="checkbox" id="modo-escuro">
+            titulo: "Onde Vivemos",
+            subtitulo: "Conhecendo nossa cidade e comunidade",
+            aluno: "Projeto Integrador | Gabriel Senger Piana",
 
-    <label for="modo-escuro" class="botao-tema">
-        🌙 Modo Escuro
-    </label>
+            navMunicipio: "Município",
+            navBairro: "Bairro",
+            navConclusao: "Conclusão",
 
-    <header>
-        <div class="cabecalho-conteudo">
-            <h1>Onde Vivemos</h1>
-            <p class="subtitulo">Conhecendo nossa cidade e comunidade</p>
-            <p class="aluno">Projeto Integrador | Gabriel Senger Piana</p>
-        </div>
-    </header>
+            tituloMunicipio: "Município: Toledo - Paraná",
+            municipio1: `Toledo é um município localizado na região Oeste do estado do Paraná. O município é conhecido pelo desenvolvimento da agricultura, da agroindústria, do comércio e dos serviços, tendo uma importante participação na economia regional.`,
+            municipio2: `A história de Toledo começou a ganhar forma em 1946, quando chegaram à região as primeiras famílias de colonizadores. A ocupação foi impulsionada pela colonização organizada pela Industrial Madeireira Colonizadora Rio Paraná S/A (Maripá). A região também possuía relação histórica com os antigos caminhos utilizados para o transporte de produtos, especialmente a erva-mate.`,
+            municipio3: `Toledo foi desmembrado de Foz do Iguaçu pela Lei Estadual nº 790, de 14 de novembro de 1951. A instalação oficial do município ocorreu em 14 de dezembro de 1952, data que passou a ser considerada o aniversário de Toledo.`,
 
-    <nav>
-        <a href="#municipio">Município</a>
-        <a href="#bairro">Bairro</a>
-        <a href="#conclusao">Conclusão</a>
-    </nav>
+            numeros: "Toledo em números",
+            estado: "Estado:",
+            codigo: "Código do município:",
+            populacao: "População no Censo 2022:",
+            estimativa: "População estimada para 2026:",
+            area: "Área territorial:",
+            gentilico: "Gentílico:",
+            emancipacao: "Emancipação:",
 
-    <main>
+            municipio4: `Atualmente, Toledo possui uma economia diversificada, com destaque para as atividades agroindustriais, agropecuárias, industriais, comerciais e de serviços. A produção rural e a agroindústria têm papel importante na formação econômica do município.`,
+            municipio5: `Além da atividade econômica, o município possui espaços destinados à educação, cultura, esporte, lazer e convivência da população. Toledo também possui diversos distritos e uma área urbana formada por diferentes bairros.`,
 
-        <section id="municipio" class="card">
-            <h2>Município: Toledo - Paraná</h2>
+            tituloBairro: "Bairro: Jardim Pancera",
+            bairro1: `O Jardim Pancera é um bairro localizado na área urbana do município de Toledo, no Paraná. O bairro faz parte da estrutura urbana da cidade e está entre os bairros oficialmente relacionados na área urbana da sede municipal.`,
+            bairro2: `O bairro possui características predominantemente residenciais e está integrado à estrutura urbana de Toledo. Como parte da cidade, seus moradores utilizam a rede de serviços, comércio, educação, saúde, transporte e demais equipamentos disponíveis no município.`,
+            bairro3: `O Jardim Pancera também aparece em informações oficiais da Prefeitura de Toledo relacionadas à organização dos serviços públicos. O cronograma de coleta de resíduos sólidos, por exemplo, divide o bairro em diferentes áreas para a realização do serviço.`,
 
-            <p>
-                Toledo é um município localizado na região Oeste do estado do Paraná.
-                O município é conhecido pelo desenvolvimento da agricultura, da
-                agroindústria, do comércio e dos serviços, tendo uma importante
-                participação na economia regional.
-            </p>
+            relacao: "O bairro e a cidade",
+            bairro4: `Viver no Jardim Pancera significa fazer parte de uma comunidade que está diretamente ligada ao desenvolvimento de Toledo. O bairro está conectado às demais regiões da cidade por suas ruas e vias de acesso, permitindo que os moradores tenham acesso às diferentes atividades e serviços oferecidos pelo município.`,
+            bairro5: `A relação entre o bairro e o município mostra como cada comunidade contribui para formar a identidade de uma cidade. Os moradores do Jardim Pancera fazem parte da história e do cotidiano de Toledo, participando da vida social, econômica e cultural do município.`,
 
-            <p>
-                A história de Toledo começou a ganhar forma em 1946, quando chegaram
-                à região as primeiras famílias de colonizadores. A ocupação foi
-                impulsionada pela colonização organizada pela Industrial Madeireira
-                Colonizadora Rio Paraná S/A (Maripá). A região também possuía relação
-                histórica com os antigos caminhos utilizados para o transporte de
-                produtos, especialmente a erva-mate.
-            </p>
+            tituloConclusao: "Conclusão",
+            conclusao1: `Toledo é um município que apresenta uma história marcada pela colonização, pelo crescimento urbano e pelo desenvolvimento das atividades agropecuárias, industriais e de serviços. Dentro desse município está o Jardim Pancera, um dos bairros que compõem a área urbana da cidade.`,
+            conclusao2: `Conhecer o lugar onde vivemos permite compreender melhor a história, as características e a importância da comunidade da qual fazemos parte. O município e seus bairros estão ligados pelo cotidiano de seus moradores e pelo desenvolvimento conjunto da cidade.`,
 
-            <p>
-                Toledo foi desmembrado de Foz do Iguaçu pela Lei Estadual nº 790,
-                de 14 de novembro de 1951. A instalação oficial do município ocorreu
-                em 14 de dezembro de 1952, data que passou a ser considerada o
-                aniversário de Toledo.
-            </p>
+            fontes: "Fontes:",
+            textoFontes: "Instituto Brasileiro de Geografia e Estatística (IBGE) e Prefeitura Municipal de Toledo.",
+            rodape: "Projeto Integrador - Onde Vivemos",
 
-            <div class="informacoes">
-                <h3>Toledo em números</h3>
+            tema: "🌙 Modo Escuro",
+            botaoIdioma: "🇺🇸 English"
 
-                <ul>
-                    <li><strong>Estado:</strong> Paraná</li>
-                    <li><strong>Código do município:</strong> 4127700</li>
-                    <li><strong>População no Censo 2022:</strong> 150.470 habitantes</li>
-                    <li><strong>População estimada para 2026:</strong> 162.658 habitantes</li>
-                    <li><strong>Área territorial:</strong> 1.197,223 km²</li>
-                    <li><strong>Gentílico:</strong> toledano</li>
-                    <li><strong>Emancipação:</strong> 14 de dezembro de 1952</li>
-                </ul>
-            </div>
+        };
 
-            <p>
-                Atualmente, Toledo possui uma economia diversificada, com destaque
-                para as atividades agroindustriais, agropecuárias, industriais,
-                comerciais e de serviços. A produção rural e a agroindústria têm
-                papel importante na formação econômica do município.
-            </p>
 
-            <p>
-                Além da atividade econômica, o município possui espaços destinados
-                à educação, cultura, esporte, lazer e convivência da população.
-                Toledo também possui diversos distritos e uma área urbana formada
-                por diferentes bairros.
-            </p>
-        </section>
+        const idiomaIngles = {
 
-        <section id="bairro" class="card">
-            <h2>Bairro: Jardim Pancera</h2>
+            titulo: "Where We Live",
+            subtitulo: "Discovering our city and community",
+            aluno: "Integrative Project | Gabriel Senger Piana",
 
-            <p>
-                O Jardim Pancera é um bairro localizado na área urbana do município
-                de Toledo, no Paraná. O bairro faz parte da estrutura urbana da cidade
-                e está entre os bairros oficialmente relacionados na área urbana da
-                sede municipal.
-            </p>
+            navMunicipio: "Municipality",
+            navBairro: "Neighborhood",
+            navConclusao: "Conclusion",
 
-            <p>
-                O bairro possui características predominantemente residenciais e
-                está integrado à estrutura urbana de Toledo. Como parte da cidade,
-                seus moradores utilizam a rede de serviços, comércio, educação,
-                saúde, transporte e demais equipamentos disponíveis no município.
-            </p>
+            tituloMunicipio: "Municipality: Toledo - Paraná",
+            municipio1: `Toledo is a municipality located in the western region of the state of Paraná, Brazil. The municipality is known for the development of agriculture, agribusiness, commerce, and services, playing an important role in the regional economy.`,
+            municipio2: `The history of Toledo began to take shape in 1946, when the first settler families arrived in the region. The settlement was driven by the colonization organized by Industrial Madeireira Colonizadora Rio Paraná S/A (Maripá). The region also had historical connections with old routes used for transporting products, especially yerba mate.`,
+            municipio3: `Toledo was separated from Foz do Iguaçu by State Law No. 790, dated November 14, 1951. The municipality was officially established on December 14, 1952, a date that became known as Toledo's anniversary.`,
 
-            <p>
-                O Jardim Pancera também aparece em informações oficiais da Prefeitura
-                de Toledo relacionadas à organização dos serviços públicos. O
-                cronograma de coleta de resíduos sólidos, por exemplo, divide o bairro
-                em diferentes áreas para a realização do serviço.
-            </p>
+            numeros: "Toledo in Numbers",
+            estado: "State:",
+            codigo: "Municipality code:",
+            populacao: "Population in the 2022 Census:",
+            estimativa: "Estimated population for 2026:",
+            area: "Territorial area:",
+            gentilico: "Demonym:",
+            emancipacao: "Municipal establishment:",
 
-            <div class="informacoes">
-                <h3>O bairro e a cidade</h3>
+            municipio4: `Today, Toledo has a diversified economy, with emphasis on agribusiness, agricultural, industrial, commercial, and service activities. Rural production and agribusiness play an important role in the municipality's economy.`,
+            municipio5: `In addition to economic activities, the municipality has spaces dedicated to education, culture, sports, leisure, and community interaction. Toledo also has several districts and an urban area made up of different neighborhoods.`,
 
-                <p>
-                    Viver no Jardim Pancera significa fazer parte de uma comunidade que
-                    está diretamente ligada ao desenvolvimento de Toledo. O bairro está
-                    conectado às demais regiões da cidade por suas ruas e vias de acesso,
-                    permitindo que os moradores tenham acesso às diferentes atividades
-                    e serviços oferecidos pelo município.
-                </p>
+            tituloBairro: "Neighborhood: Jardim Pancera",
+            bairro1: `Jardim Pancera is a neighborhood located in the urban area of Toledo, Paraná. The neighborhood is part of the city's urban structure and is among the officially recognized neighborhoods in the municipal headquarters.`,
+            bairro2: `The neighborhood is predominantly residential and is integrated into Toledo's urban structure. As part of the city, its residents use the network of services, commerce, education, healthcare, transportation, and other facilities available in the municipality.`,
+            bairro3: `Jardim Pancera also appears in official information from Toledo City Hall regarding the organization of public services. For example, the solid waste collection schedule divides the neighborhood into different areas to provide this service.`,
 
-                <p>
-                    A relação entre o bairro e o município mostra como cada comunidade
-                    contribui para formar a identidade de uma cidade. Os moradores do
-                    Jardim Pancera fazem parte da história e do cotidiano de Toledo,
-                    participando da vida social, econômica e cultural do município.
-                </p>
-            </div>
-        </section>
+            relacao: "The Neighborhood and the City",
+            bairro4: `Living in Jardim Pancera means being part of a community directly connected to Toledo's development. The neighborhood is connected to other areas of the city through its streets and access roads, allowing residents to access the various activities and services offered by the municipality.`,
+            bairro5: `The relationship between the neighborhood and the municipality shows how each community contributes to a city's identity. The residents of Jardim Pancera are part of Toledo's history and daily life, participating in the social, economic, and cultural life of the municipality.`,
 
-        <section id="conclusao" class="card">
-            <h2>Conclusão</h2>
+            tituloConclusao: "Conclusion",
+            conclusao1: `Toledo is a municipality with a history marked by colonization, urban growth, and the development of agricultural, industrial, and service activities. Within this municipality is Jardim Pancera, one of the neighborhoods that make up the city's urban area.`,
+            conclusao2: `Knowing the place where we live allows us to better understand the history, characteristics, and importance of the community we belong to. The municipality and its neighborhoods are connected through the daily lives of their residents and the city's collective development.`,
 
-            <p>
-                Toledo é um município que apresenta uma história marcada pela
-                colonização, pelo crescimento urbano e pelo desenvolvimento das
-                atividades agropecuárias, industriais e de serviços. Dentro desse
-                município está o Jardim Pancera, um dos bairros que compõem a área
-                urbana da cidade.
-            </p>
+            fontes: "Sources:",
+            textoFontes: "Brazilian Institute of Geography and Statistics (IBGE) and Toledo City Hall.",
+            rodape: "Integrative Project - Where We Live",
 
-            <p>
-                Conhecer o lugar onde vivemos permite compreender melhor a história,
-                as características e a importância da comunidade da qual fazemos
-                parte. O município e seus bairros estão ligados pelo cotidiano de
-                seus moradores e pelo desenvolvimento conjunto da cidade.
-            </p>
-        </section>
+            tema: "🌙 Dark Mode",
+            botaoIdioma: "🇧🇷 Português"
 
-    </main>
+        };
 
-    <footer>
-        <p>
-            <strong>Fontes:</strong> Instituto Brasileiro de Geografia e Estatística
-            (IBGE) e Prefeitura Municipal de Toledo.
-        </p>
-        <p class="rodape-final">Projeto Integrador - Onde Vivemos</p>
-    </footer>
+
+        let idiomaAtual = "pt";
+
+
+        function alterarIdioma() {
+
+            idiomaAtual = idiomaAtual === "pt" ? "en" : "pt";
+
+            const t = idiomaAtual === "pt"
+                ? idiomaPortugues
+                : idiomaIngles;
+
+
+            // CABEÇALHO
+            document.getElementById("titulo").textContent = t.titulo;
+            document.getElementById("subtitulo").textContent = t.subtitulo;
+            document.getElementById("aluno").textContent = t.aluno;
+
+
+            // MENU
+            document.getElementById("nav-municipio").textContent = t.navMunicipio;
+            document.getElementById("nav-bairro").textContent = t.navBairro;
+            document.getElementById("nav-conclusao").textContent = t.navConclusao;
+
+
+            // MUNICÍPIO
+            document.getElementById("titulo-municipio").textContent = t.tituloMunicipio;
+
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById("municipio" + i).textContent = t["municipio" + i];
+            }
+
+            document.getElementById("titulo-numeros").textContent = t.numeros;
+
+
+            // INFORMAÇÕES DO MUNICÍPIO
+            const rotulos = [
+                "estado",
+                "codigo",
+                "populacao",
+                "estimativa",
+                "area",
+                "gentilico",
+                "emancipacao"
+            ];
+
+            rotulos.forEach(rotulo => {
+                document.getElementById("rotulo-" + rotulo).textContent = t[rotulo];
+            });
+
+
+            // BAIRRO
+            document.getElementById("titulo-bairro").textContent = t.tituloBairro;
+
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById("bairro" + i).textContent = t["bairro" + i];
+            }
+
+            document.getElementById("titulo-relacao").textContent = t.relacao;
+
+            document.getElementById("bairro4").textContent = t.bairro4;
+            document.getElementById("bairro5").textContent = t.bairro5;
+
+
+            // CONCLUSÃO
+            document.getElementById("titulo-conclusao").textContent = t.tituloConclusao;
+
+            document.getElementById("conclusao1").textContent = t.conclusao1;
+            document.getElementById("conclusao2").textContent = t.conclusao2;
+
+
+            // RODAPÉ
+            document.getElementById("fontes").textContent = t.fontes;
+            document.getElementById("texto-fontes").textContent = t.textoFontes;
+            document.getElementById("rodape-final").textContent = t.rodape;
+
+
+            // BOTÕES
+            document.getElementById("texto-tema").textContent = t.tema;
+            botaoIdioma.textContent = t.botaoIdioma;
+
+
+            // IDIOMA DO DOCUMENTO
+            document.documentElement.lang =
+                idiomaAtual === "pt" ? "pt-BR" : "en";
+
+
+            // TÍTULO DA ABA
+            document.title = t.titulo + " | Toledo - PR";
+
+        }
+
+
+        // EVENTO DO BOTÃO DE IDIOMA
+        botaoIdioma.addEventListener("click", alterarIdioma);
+
+
+        // MODO ESCURO
+        const modoEscuro = document.getElementById("modo-escuro");
+
+        modoEscuro.addEventListener("change", function() {
+
+            const t = idiomaAtual === "pt"
+                ? idiomaPortugues
+                : idiomaIngles;
+
+            document.getElementById("texto-tema").textContent =
+                modoEscuro.checked
+                    ? (idiomaAtual === "pt" ? "☀️ Modo Claro" : "☀️ Light Mode")
+                    : t.tema;
+
+        });
+
+    </script>
 
 </body>
 </html>
