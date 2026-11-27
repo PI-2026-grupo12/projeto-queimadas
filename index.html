@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,154 +8,115 @@
 
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f4f8;
-            color: #222;
-            transition: 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f5f1;
+            color: #303b33;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .menu {
-            width: 100%;
-            padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+            background-color: white;
+            width: 90%;
+            max-width: 650px;
+            padding: 40px;
+            border-radius: 15px;
             text-align: center;
-            transition: 0.3s;
-        }
-        .menu h1 {
-            margin: 0 0 8px;
-            color: #222;
-            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
         }
 
-        .menu h2 {
-            margin: 0 0 8px;
-            color: #555;
-            font-size: 20px;
-            font-weight: 500;
+        h1 {
+            margin-bottom: 20px;
         }
 
-        .menu h3 {
-            margin: 0 0 20px;
-            color: #24436b;
-            font-size: 17px;
-            font-weight: 500;
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .controles {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #4b7657;
+            color: white;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #365b40;
         }
 
         .links {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             gap: 15px;
         }
 
         .links a {
-            flex: 1;
-            max-width: 300px;
-            padding: 13px;
-            border-radius: 8px;
-            background: #e9eef7;
-            color: #24436b;
+            display: block;
+            padding: 15px;
+            background-color: #e3eee4;
+            color: #303b33;
             text-decoration: none;
-            transition: 0.3s;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .links a:hover {
-            background: #24436b;
-            color: #ffffff;
+            background-color: #c8ddcb;
+            transform: scale(1.02);
         }
 
-        .botao-tema {
-            position: fixed;
-            top: 15px;
-            right: 15px;
-            padding: 10px 16px;
-            border: none;
-            border-radius: 8px;
-            background: #24436b;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .botao-tema:hover {
-            opacity: 0.85;
-        }
-
-        .botao-idioma {
-            position: fixed;
-            top: 15px;
-            right: 160px;
-            padding: 10px 16px;
-            border: none;
-            border-radius: 8px;
-            background: #24436b;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .botao-idioma:hover {
-            opacity: 0.85;
-        }
-
+        /* Modo noturno */
         body.modo-noturno {
-            background: #121212;
-            color: #ffffff;
+            background-color: #202820;
+            color: #e8eee8;
         }
 
         body.modo-noturno .menu {
-            background: #1e1e1e;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        body.modo-noturno .menu h1 {
-            color: #ffffff;
-        }
-
-        body.modo-noturno .menu h2 {
-            color: #cccccc;
-        }
-
-        body.modo-noturno .menu h3 {
-            color: #8bb8f0;
+            background-color: #303b33;
         }
 
         body.modo-noturno .links a {
-            background: #333333;
-            color: #ffffff;
+            background-color: #465749;
+            color: #f1f5f1;
         }
 
         body.modo-noturno .links a:hover {
-            background: #24436b;
-        }
-
-        body.modo-noturno .botao-tema {
-            background: #f0c75e;
-            color: #222222;
+            background-color: #58715d;
         }
 
         @media (max-width: 520px) {
             .menu {
-                padding-top: 65px;
+                padding: 25px;
             }
 
-            .links {
+            .controles {
                 flex-direction: column;
-            }
-
-            .links a {
-                max-width: 100%;
-            }
-
-            .botao-idioma {
-                right: 145px;
             }
         }
     </style>
@@ -163,67 +124,91 @@
 
 <body>
 
-    <button class="botao-tema" id="botaoTema"
-            onclick="alternarTema()" aria-pressed="false">
-        🌙 Modo noturno
-    </button>
+    <div class="menu">
 
-    <button class="botao-idioma" id="botaoIdioma"
-            onclick="alternarIdioma()">
-        🇺🇸 English
-    </button>
+        <h1>Menu</h1>
 
-    <nav class="menu">
-        <h1 id="titulo">Menu</h1>
-        <h2 id="projeto">Projeto Integrador</h2>
-        <h3 id="sobre">Sobre nós</h3>
+        <div class="controles">
+            <button id="botaoTema" onclick="alternarTema()" aria-pressed="false">
+                🌙 Modo Noturno
+            </button>
+
+            <button id="botaoIdioma" onclick="alternarIdioma()">
+                🇺🇸 English
+            </button>
+        </div>
+
+        <h2 id="tituloProjeto">Projeto Integrador</h2>
+
+        <p id="sobreProjeto">Sobre nós</p>
 
         <div class="links">
             <a href="gabb.html">Gabriel Senger Piana</a>
             <a href="#pedro-geraldi">Pedro Geraldi</a>
-            <a rel="stylesheet" href="lucas.html">Lucas Gowert</a>
+            <a href="lucas.html">Lucas Gowert</a>
+            <a href="cronicasgowert.html">Crônicas Gowert</a>
         </div>
-    </nav>
+
+    </div>
 
     <script>
+        let modoNoturno = false;
         let idiomaIngles = false;
 
         function alternarTema() {
-            const corpo = document.body;
-            const botao = document.getElementById("botaoTema");
+            modoNoturno = !modoNoturno;
 
-            corpo.classList.toggle("modo-noturno");
+            document.body.classList.toggle("modo-noturno", modoNoturno);
 
-            if (corpo.classList.contains("modo-noturno")) {
-                botao.innerHTML = idiomaIngles ? "☀️ Light mode" : "☀️ Modo claro";
-                botao.setAttribute("aria-pressed", "true");
+            const botaoTema = document.getElementById("botaoTema");
+
+            if (modoNoturno) {
+                botaoTema.innerHTML = idiomaIngles
+                    ? "☀️ Light Mode"
+                    : "☀️ Modo Claro";
             } else {
-                botao.innerHTML = idiomaIngles ? "🌙 Dark mode" : "🌙 Modo noturno";
-                botao.setAttribute("aria-pressed", "false");
+                botaoTema.innerHTML = idiomaIngles
+                    ? "🌙 Dark Mode"
+                    : "🌙 Modo Noturno";
             }
+
+            botaoTema.setAttribute("aria-pressed", modoNoturno);
         }
 
         function alternarIdioma() {
             idiomaIngles = !idiomaIngles;
 
-            document.documentElement.lang = idiomaIngles ? "en" : "pt-BR";
+            const botaoIdioma = document.getElementById("botaoIdioma");
+            const tituloProjeto = document.getElementById("tituloProjeto");
+            const sobreProjeto = document.getElementById("sobreProjeto");
+            const botaoTema = document.getElementById("botaoTema");
 
-            document.getElementById("titulo").textContent =
-                "Menu";
+            if (idiomaIngles) {
+                document.documentElement.lang = "en";
 
-            document.getElementById("projeto").textContent =
-                idiomaIngles ? "Integration Project" : "Projeto Integrador";
+                document.title = "Menu - Integrator Project";
+                tituloProjeto.innerHTML = "Integrator Project";
+                sobreProjeto.innerHTML = "About Us";
 
-            document.getElementById("sobre").textContent =
-                idiomaIngles ? "About us" : "Sobre nós";
+                botaoIdioma.innerHTML = "🇧🇷 Português";
 
-            document.getElementById("botaoIdioma").textContent =
-                idiomaIngles ? "🇧🇷 Português" : "🇺🇸 English";
+                botaoTema.innerHTML = modoNoturno
+                    ? "☀️ Light Mode"
+                    : "🌙 Dark Mode";
 
-            document.getElementById("botaoTema").textContent =
-                document.body.classList.contains("modo-noturno")
-                ? (idiomaIngles ? "☀️ Light mode" : "☀️ Modo claro")
-                : (idiomaIngles ? "🌙 Dark mode" : "🌙 Modo noturno");
+            } else {
+                document.documentElement.lang = "pt-BR";
+
+                document.title = "Menu - Projeto Integrador";
+                tituloProjeto.innerHTML = "Projeto Integrador";
+                sobreProjeto.innerHTML = "Sobre nós";
+
+                botaoIdioma.innerHTML = "🇺🇸 English";
+
+                botaoTema.innerHTML = modoNoturno
+                    ? "☀️ Modo Claro"
+                    : "🌙 Modo Noturno";
+            }
         }
     </script>
 
